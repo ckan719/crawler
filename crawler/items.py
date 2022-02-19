@@ -26,4 +26,12 @@ class Job(scrapy.Item):
     contact = scrapy.Field()
     job_tag = scrapy.Field()
     position = scrapy.Field()
-    age = scrapy.Field()
+
+
+class Employer(scrapy.Item):
+    name = scrapy.Field()
+    address = scrapy.Field()
+    career = scrapy.Field()
+    company_size = scrapy.Field()
+    followers = scrapy.Field()
+    description = scrapy.Field()
