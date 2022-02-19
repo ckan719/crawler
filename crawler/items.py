@@ -35,3 +35,22 @@ class Employer(scrapy.Item):
     company_size = scrapy.Field()
     followers = scrapy.Field()
     description = scrapy.Field()
+
+
+class Candidate(scrapy.Item):
+    name = scrapy.Field()
+    birth_date = scrapy.Field()
+    gender = scrapy.Field()
+    marital_status = scrapy.Field()
+    address = scrapy.Field()
+    position = scrapy.Field()
+    position_recruitment = scrapy.Field()
+    salary = scrapy.Field()
+    working_form = scrapy.Field()
+    career = scrapy.Field()
+    target_work_address = scrapy.Field()
+    experience = scrapy.Field()
+    education = scrapy.Field()
+    skill = scrapy.Field()
+    language = scrapy.Field()
+    achievements = scrapy.Field()
