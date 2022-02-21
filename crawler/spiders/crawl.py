@@ -53,8 +53,8 @@ class CrawlerSpider(Spider):
             return " ".join(response.strip().split())
         except:
             return ""
-    # Crawl Job
 
+    # Crawl Job
     def parse_job(self, response):
         for quotes in response.css('div.job-info.yes-logo'):
             yield response.follow(quotes.css('h3 a::attr("href")').get(), self.get_job)
